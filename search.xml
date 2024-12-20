@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>The installation of glafic</title>
-    <url>/2024/12/15/hello-world/</url>
+    <url>/2024/12/20/hello-world/</url>
     <content><![CDATA[<h1 id="Installation-of-Glafic-Library"><a href="#Installation-of-Glafic-Library" class="headerlink" title="Installation of Glafic Library"></a>Installation of Glafic Library</h1><p>The Glafic library is written in C and cannot be directly installed using <code>pip install</code>. However, the author has provided Python bindings via C-to-Python translation. Installation requires a series of steps:</p>
 <h2 id="Download-Glafic"><a href="#Download-Glafic" class="headerlink" title="Download Glafic"></a>Download Glafic</h2><ol>
 <li>Download the zip file from <a href="https://github.com/oguri/glafic2">Glafic GitHub Repository</a>.</li>
@@ -50,5 +50,12 @@
 <li>Ensure you replace the paths with the correct installation locations, especially for the libraries, if they are in a custom directory.</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>astronomy software</category>
+      </categories>
+      <tags>
+        <tag>code</tag>
+        <tag>python</tag>
+      </tags>
   </entry>
 </search>
