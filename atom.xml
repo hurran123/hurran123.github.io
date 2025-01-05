@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-12-20T14:14:30.611Z</updated>
+  <updated>2025-01-05T18:04:19.509Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Some note on GR</title>
+    <link href="http://example.com/2025/01/06/GR/"/>
+    <id>http://example.com/2025/01/06/GR/</id>
+    <published>2025-01-05T17:38:49.000Z</published>
+    <updated>2025-01-05T18:04:19.509Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><em>1. In Cartesian coordinates, the Lagrangian density for a scalar field  is given by:</em></strong></p><script type="math/tex; mode=display">\mathcal{L}(\phi, \partial_{\mu} \phi)=-\frac{1}{2} \delta^{\mu \nu} \partial_{\mu} \phi \partial_{\nu} \phi-4 \pi G \chi{(1+\phi)}</script><p><strong><em>$\quad$where $\phi$ is a function of coordinates, and $\chi$ is the Newtonian constant.<br>    $\quad$(a) Using the principle of stationary action , $\delta S=0$,derive the equation of motion for the scalar field from the action .<br>$\quad$(b) Based on the tilted gravity theory, if the scalar field represents the Newtonian potential, explain the physical meaning of $\chi$.</em></strong></p><p><strong><em>Answer:</em></strong><br>（a）$S(\phi)=\int_{\Omega} \mathcal{L}(\phi, \partial_{\mu} \phi) d V$<br>Use the principle : $\delta S = 0$,thus,</p><script type="math/tex; mode=display">\delta S =\int \delta \mathcal{L} \, dV = 0</script><p>Our goal is to make the form as :$\int[\quad]\delta \phi dV$,so it can easily think about this little  math trick:<br>(notice that $\delta(\partial_{\mu}\phi) = \partial_{\mu}(\delta \phi)$)</p><script type="math/tex; mode=display">\begin{aligned}\delta \mathcal{L} &= \frac{\partial \mathcal{L}}{\partial \phi}\delta \mathcal{\phi}+\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} \phi)}\delta \mathcal{(\partial_{\mu}\phi)}\\\ &=\frac{\partial \mathcal{L}}{\partial \phi}\delta \mathcal{\phi}+\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} \phi)}\partial_{\mu}\mathcal{(\delta\phi)}\\\&=\frac{\partial \mathcal{L}}{\partial \phi}\delta \mathcal{\phi}+\partial_{\mu}\left(\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} \phi)}\delta\phi\right)-\partial_{\mu}\left(\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} \phi)}\right)\delta\phi\end{aligned}</script><p>We always require the boundary values to be zero,so :</p><script type="math/tex; mode=display">\int_{\Omega}\partial_{\mu}\left(\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} \phi)}\delta\phi\right)dV \equiv 0</script><p>Here , the form of the principle of least action becomes:</p><script type="math/tex; mode=display">\delta S = \int_{\Omega} \left(\frac{\partial \mathcal{L}}{\partial \phi}-\partial_{\mu}\left(\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} \phi)}\right)\right)\delta\phi dV</script><p>So we can derive the Euler-Lagrange equation as:</p><script type="math/tex; mode=display">\frac{\partial \mathcal{L}}{\partial \phi}-\partial_{\mu}\left(\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} \phi)}\right)=0</script><p>Substituting the specific form of the Lagrangian density:</p><script type="math/tex; mode=display">\begin{aligned}& \begin{array}{l}\therefore\left\{\begin{array}{l}\frac{\partial \mathcal{L}}{\partial \phi}=-4 \pi G \chi \\\frac{\partial \mathcal{L}}{\partial(\partial_\mu \phi)}=-\partial^\mu \phi \end{array}\right.\end{array} \\\end{aligned}</script><p>Thus:</p><script type="math/tex; mode=display">-4\pi G \chi - \partial^\mu (-\partial_\mu \phi)= 0 \\\\rightarrow \nabla^2 \phi = 4\pi G \rho</script><p>(b) According to Newton’s law of gravity, $\nabla^2 \phi = 4\pi G \rho$, which implies $\chi = \rho$.  </p><p>$\rho$ is the source of the gravitational potential. In this case, the influence of $\chi$ on any scalar field $\phi$ can be summarized as follows:  </p><ol><li>$\chi$ serves as the source of the gravitational potential.  </li><li>The distribution of $\chi$ directly impacts the distribution of $\phi$, with $\phi$ being interpretable as an excitation of $\chi$.  </li></ol><p><strong><em>To be continued</em></strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;1. In Cartesian coordinates, the Lagrangian density for a scalar field  is given by:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;script type=&quot;math/tex</summary>
+      
+    
+    
+    
+    <category term="physics" scheme="http://example.com/categories/physics/"/>
+    
+    
+    <category term="general relativity" scheme="http://example.com/tags/general-relativity/"/>
+    
+    <category term="math" scheme="http://example.com/tags/math/"/>
+    
+  </entry>
   
   <entry>
     <title>The installation of glafic</title>

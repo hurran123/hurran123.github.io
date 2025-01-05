@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Some note on GR</title>
+    <url>/2025/01/06/GR/</url>
+    <content><![CDATA[<p><strong><em>1. In Cartesian coordinates, the Lagrangian density for a scalar field  is given by:</em></strong></p>
+<script type="math/tex; mode=display">
+\mathcal{L}(\phi, \partial_{\mu} \phi)=-\frac{1}{2} \delta^{\mu \nu} \partial_{\mu} \phi \partial_{\nu} \phi-4 \pi G \chi{(1+\phi)}</script><p><strong><em>$\quad$where $\phi$ is a function of coordinates, and $\chi$ is the Newtonian constant.<br>    $\quad$(a) Using the principle of stationary action , $\delta S=0$,derive the equation of motion for the scalar field from the action .<br>$\quad$(b) Based on the tilted gravity theory, if the scalar field represents the Newtonian potential, explain the physical meaning of $\chi$.</em></strong></p>
+<p><strong><em>Answer:</em></strong><br>（a）$S(\phi)=\int_{\Omega} \mathcal{L}(\phi, \partial_{\mu} \phi) d V$<br>Use the principle : $\delta S = 0$,thus,</p>
+<script type="math/tex; mode=display">
+\delta S =\int \delta \mathcal{L} \, dV = 0</script><p>Our goal is to make the form as :$\int[\quad]\delta \phi dV$,so it can easily think about this little  math trick:<br>(notice that $\delta(\partial_{\mu}\phi) = \partial_{\mu}(\delta \phi)$)</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\delta \mathcal{L} &= \frac{\partial \mathcal{L}}{\partial \phi}\delta \mathcal{\phi}+\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} \phi)}\delta \mathcal{(\partial_{\mu}\phi)}\\\ 
+&=\frac{\partial \mathcal{L}}{\partial \phi}\delta \mathcal{\phi}+\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} \phi)}\partial_{\mu}\mathcal{(\delta\phi)}\\\
+&=\frac{\partial \mathcal{L}}{\partial \phi}\delta \mathcal{\phi}+\partial_{\mu}\left(\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} \phi)}\delta\phi\right)-\partial_{\mu}\left(\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} \phi)}\right)\delta\phi
+\end{aligned}</script><p>We always require the boundary values to be zero,so :</p>
+<script type="math/tex; mode=display">
+\int_{\Omega}\partial_{\mu}\left(\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} \phi)}\delta\phi\right)dV \equiv 0</script><p>Here , the form of the principle of least action becomes:</p>
+<script type="math/tex; mode=display">
+\delta S = \int_{\Omega} \left(\frac{\partial \mathcal{L}}{\partial \phi}-\partial_{\mu}\left(\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} \phi)}\right)\right)\delta\phi dV</script><p>So we can derive the Euler-Lagrange equation as:</p>
+<script type="math/tex; mode=display">
+\frac{\partial \mathcal{L}}{\partial \phi}-\partial_{\mu}\left(\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} \phi)}\right)=0</script><p>Substituting the specific form of the Lagrangian density:</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+& \begin{array}{l}
+\therefore\left\{\begin{array}{l}
+\frac{\partial \mathcal{L}}{\partial \phi}=-4 \pi G \chi \\
+\frac{\partial \mathcal{L}}{\partial(\partial_\mu \phi)}=-\partial^\mu \phi 
+\end{array}\right.
+\end{array} \\
+\end{aligned}</script><p>Thus:</p>
+<script type="math/tex; mode=display">
+-4\pi G \chi - \partial^\mu (-\partial_\mu \phi)= 0 \\\
+\rightarrow \nabla^2 \phi = 4\pi G \rho</script><p>(b) According to Newton’s law of gravity, $\nabla^2 \phi = 4\pi G \rho$, which implies $\chi = \rho$.  </p>
+<p>$\rho$ is the source of the gravitational potential. In this case, the influence of $\chi$ on any scalar field $\phi$ can be summarized as follows:  </p>
+<ol>
+<li>$\chi$ serves as the source of the gravitational potential.  </li>
+<li>The distribution of $\chi$ directly impacts the distribution of $\phi$, with $\phi$ being interpretable as an excitation of $\chi$.  </li>
+</ol>
+<p><strong><em>To be continued</em></strong></p>
+]]></content>
+      <categories>
+        <category>physics</category>
+      </categories>
+      <tags>
+        <tag>general relativity</tag>
+        <tag>math</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>The installation of glafic</title>
     <url>/2024/12/20/hello-world/</url>
     <content><![CDATA[<h1 id="Installation-of-Glafic-Library"><a href="#Installation-of-Glafic-Library" class="headerlink" title="Installation of Glafic Library"></a>Installation of Glafic Library</h1><p>The Glafic library is written in C and cannot be directly installed using <code>pip install</code>. However, the author has provided Python bindings via C-to-Python translation. Installation requires a series of steps:</p>
@@ -11,19 +59,14 @@
 </ol>
 <h3 id="Install-Required-Header-Files-needed-by-Glafic-library"><a href="#Install-Required-Header-Files-needed-by-Glafic-library" class="headerlink" title="Install Required Header Files (needed by Glafic library)"></a>Install Required Header Files (needed by Glafic library)</h3><p>Open the terminal and install the necessary dependencies:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get update</span><br><span class="line"><span class="built_in">sudo</span> apt-get install libfftw3-dev</span><br><span class="line"><span class="built_in">sudo</span> apt-get install libcfitsio-dev</span><br><span class="line"><span class="built_in">sudo</span> apt-get install libgsl-dev</span><br></pre></td></tr></table></figure>
-
 <h3 id="Locate-the-Installation-Paths-for-Libraries"><a href="#Locate-the-Installation-Paths-for-Libraries" class="headerlink" title="Locate the Installation Paths for Libraries"></a>Locate the Installation Paths for Libraries</h3><p>The default location is usually <code>/usr/lib</code>, but sometimes the libraries might be installed in different directories. For example, the libraries may be located in <code>/usr/lib/x86_64-linux-gnu</code>. To find the exact location, use the following commands:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> find / -name <span class="string">&quot;libcfitsio.so&quot;</span></span><br><span class="line"><span class="built_in">sudo</span> find / -name <span class="string">&quot;libfftw3.so&quot;</span></span><br><span class="line"><span class="built_in">sudo</span> find / -name <span class="string">&quot;libgsl.so&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>The results may look like:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">(base) usr@usr-computer:~$ <span class="built_in">sudo</span> find / -name <span class="string">&quot;libcfitsio.so&quot;</span></span><br><span class="line">find: ‘/run/user/1000/doc’: Permission denied</span><br><span class="line">find: ‘/run/user/1000/gvfs’: Permission denied</span><br><span class="line">find: ‘/proc/1730/task/1730/net’: Invalid argument</span><br><span class="line">find: ‘/proc/1730/net’: Invalid argument</span><br><span class="line">/usr/lib/x86_64-linux-gnu/libcfitsio.so</span><br></pre></td></tr></table></figure>
-
 <h3 id="Modify-Global-Environment"><a href="#Modify-Global-Environment" class="headerlink" title="Modify Global Environment"></a>Modify Global Environment</h3><p>Edit your global environment settings to add the library paths:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nano ~/.bashrc</span><br></pre></td></tr></table></figure>
-
 <p>Add the following line at the end of the file:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> LD_LIBRARY_PATH=/usr/local/lib/x86_64-linux-gnu:<span class="variable">$LD_LIBRARY_PATH</span></span><br></pre></td></tr></table></figure>
-
 <p>Replace <code>/usr/local/lib/x86_64-linux-gnu</code> with the actual path where the libraries are installed.</p>
 <p>To save and exit the <code>nano</code> editor:</p>
 <ul>
@@ -33,16 +76,12 @@
 </ul>
 <p>Update the environment:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure>
-
 <h3 id="Modify-the-Makefile"><a href="#Modify-the-Makefile" class="headerlink" title="Modify the Makefile"></a>Modify the Makefile</h3><p>Edit the <code>Makefile</code> to ensure it uses the correct library paths:</p>
 <figure class="highlight makefile"><table><tr><td class="code"><pre><span class="line">UNAME_S := <span class="variable">$(<span class="built_in">shell</span> uname -s)</span></span><br><span class="line">UNAME_M := <span class="variable">$(<span class="built_in">shell</span> uname -m)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">ifeq</span> (<span class="variable">$(UNAME_S)</span>,Darwin)</span><br><span class="line">        <span class="keyword">ifeq</span> (<span class="variable">$(UNAME_M)</span>,x86_64)</span><br><span class="line">                CFLAGS2 = -lcurl</span><br><span class="line">                LIBPATH = /usr/local/lib</span><br><span class="line">                INCPATH = /usr/local/<span class="keyword">include</span></span><br><span class="line">                PY_LIBS = -lm -lcfitsio -lfftw3 -lgsl -lgslcblas</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">                CFLAGS2 = -lcurl -lz</span><br><span class="line">                LIBPATH = /opt/homebrew/lib</span><br><span class="line">                INCPATH = /opt/homebrew/<span class="keyword">include</span></span><br><span class="line">                PY_LIBS = -lm -lcfitsio -lfftw3 -lgsl -lgslcblas</span><br><span class="line">        <span class="keyword">endif</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">        <span class="keyword">ifeq</span> (<span class="variable">$(UNAME_S)</span>,Linux)</span><br><span class="line">                CFLAGS2 =</span><br><span class="line">                LIBPATH = /usr/lib/x86_64-linux-gnu  <span class="comment"># Update this path</span></span><br><span class="line">                INCPATH = /usr/local/<span class="keyword">include</span></span><br><span class="line">                PY_LIBS = -lm -lcfitsio -lfftw3 -lgsl -lgslcblas  <span class="comment"># Use dynamic linking (.so)</span></span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">                CFLAGS2 =</span><br><span class="line">                LIBPATH =</span><br><span class="line">                INCPATH =</span><br><span class="line">                PY_LIBS =</span><br><span class="line">        <span class="keyword">endif</span></span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">CC      = gcc</span><br><span class="line">CFLAGS  = -O2 -Wall -fPIC -I<span class="variable">$(INCPATH)</span></span><br><span class="line">LIBS    = -lm -lcfitsio -lfftw3 -lgsl -lgslcblas  <span class="comment"># Modify to use dynamic libraries (.so)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Use .so files</span></span><br><span class="line">LIBS    = -lm -L<span class="variable">$(LIBPATH)</span> -lcfitsio -lfftw3 -lgsl -lgslcblas  <span class="comment"># Add -L$(LIBPATH) for the linker to find the library files</span></span><br></pre></td></tr></table></figure>
-
 <h3 id="Install-Python-Libraries"><a href="#Install-Python-Libraries" class="headerlink" title="Install Python Libraries"></a>Install Python Libraries</h3><p>Navigate to the directory containing <code>setup.py</code> and run the following command:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install .</span><br></pre></td></tr></table></figure>
-
 <p>Now you should be able to import and use the Glafic library in Python:</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> glafic</span><br></pre></td></tr></table></figure>
-
 <hr>
 <h3 id="Notes"><a href="#Notes" class="headerlink" title="Notes:"></a>Notes:</h3><ul>
 <li>This guide assumes the user is working on a <strong>Linux</strong> system, likely Ubuntu.</li>
