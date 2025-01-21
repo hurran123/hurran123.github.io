@@ -6,7 +6,7 @@
   <link href="http://blog.sunmingqi.com/atom.xml" rel="self"/>
   
   <link href="http://blog.sunmingqi.com/"/>
-  <updated>2025-01-05T18:04:19.509Z</updated>
+  <updated>2025-01-21T15:19:08.167Z</updated>
   <id>http://blog.sunmingqi.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Piano</title>
+    <link href="http://blog.sunmingqi.com/2025/01/21/Piano/"/>
+    <id>http://blog.sunmingqi.com/2025/01/21/Piano/</id>
+    <published>2025-01-21T13:25:50.000Z</published>
+    <updated>2025-01-21T15:19:08.167Z</updated>
+    
+    <content type="html"><![CDATA[<p>Here’s my work on State Anthem of the Soviet Union:<br>still need practice.</p><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113865387938286&bvid=BV1QBwheNEJT&cid=27993114712&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Here’s my work on State Anthem of the Soviet Union:&lt;br&gt;still need practice.&lt;/p&gt;
+&lt;div style=&quot;position: relative; width: 100%; height: 0; p</summary>
+      
+    
+    
+    
+    <category term="Music" scheme="http://blog.sunmingqi.com/categories/Music/"/>
+    
+    
+    <category term="piano" scheme="http://blog.sunmingqi.com/tags/piano/"/>
+    
+  </entry>
   
   <entry>
     <title>Some note on GR</title>
